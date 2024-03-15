@@ -27,5 +27,8 @@ jobs:
       - name: Run script
         run: |
           node ./main.js
+        env:
+          DISCORD_WEBHOOK: ${{ secrets.DISCORD_WEBHOOK }}
+          
 
       
