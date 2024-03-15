@@ -14,7 +14,7 @@ async function main(){
     })
     return 
   }
-  if (content.includes("This beta isn't accepting"){
+  if (content.includes("This beta isn't accepting")){
     // closed
      await fetch(webhook, {
       method: "POST",
