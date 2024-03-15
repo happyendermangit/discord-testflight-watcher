@@ -1,8 +1,7 @@
 async function sendToHook(message) {
 
-  const webhook =
-  "https://canary.discord.com/api/webhooks/1218190715910356992/8DP3Ka0j4iX8kXUroDRwRSb1E73Jo0b1zF3uJ1zkn6AR7-NhfQ2MWsbGVbmkf8aKoFKR";
-  const response = await (
+  const webhook = process.env.DISCORD_WEBHOOK
+    const response = await (
     await fetch(webhook, {
       method: "POST",
       headers: {
